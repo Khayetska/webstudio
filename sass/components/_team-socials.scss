@@ -22,6 +22,9 @@
     fill: #afb1b8;
     @include animation (fill);
 
+    width: 20px;
+    height: 20px;
+
     .socials__link:hover &,
     .socials__link:focus & {
         fill: #ffffff;

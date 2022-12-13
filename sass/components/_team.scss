@@ -1,23 +1,38 @@
 .team {
     background-color: #f5f4fa;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    // на таблетці також по 60px
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .team__list {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 0;
     margin-top: 0;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .team__item {
     background-color: #ffffff;
-    width: 270px;
+    width: 100%;
+    // width: 270px;
     padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
 .team__img {
