@@ -19,7 +19,7 @@
   </head>
   <body>
     <!---------HEADER---------->
-    <!-- <header class="header">
+    <header class="header">
       <div class="conteiner">
         <nav class="nav">
           <a class="logo header__logo link" href="./index.html">
@@ -53,19 +53,27 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg class="mobile-menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
-    <main> -->
+    <main>
       <!--------HERO--------->
-      <!-- <section class="hero">
+       <section class="hero">
         <div class="conteiner">
           <h1 class="hero__description">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero__button" data-modal-open>
             Замовити послугу
           </button>
-        </div> -->
+        </div>
         <!-- modal window -->
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="close-button  modal__close-button" type="button" data-modal-close>
               <svg class="close-button__icon" width="11" height="11">
@@ -136,9 +144,9 @@
             </form>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-------FEATURES-------->
-      <!-- <section class="features">
+      <section class="features">
         <div class="conteiner">
           <h2 class="title title--visually-hidden">Чому саме ми?</h2>
           <ul class="list feature__list">
@@ -191,9 +199,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
       <!--------WORK---------->
-      <!-- <section class="work">
+      <section class="work">
         <div class="conteiner">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="list work__list">
@@ -240,7 +248,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-------TEAM-------->
       <section class="team">
         <div class="conteiner">
@@ -518,7 +526,7 @@
         </div>
       </section>
       <!-- CLIENTS -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="conteiner">
           <h2 class="title">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -567,9 +575,9 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
     <!--------FOOTER---------->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="conteiner">
         <div class="footer__conteiner">
           <div>
@@ -591,9 +599,9 @@
                 </li>
               </ul>
             </address>
-          </div> -->
+          </div>
           <!-- socials -->
-          <!-- <div class="footer__socials-links">
+          <div class="footer__socials-links">
             <h2 class="footer__title">приєднуйтесь</h2>
             <ul class="socials list">
               <li class="socials__item">
@@ -649,9 +657,9 @@
                 </a>
               </li>
             </ul>
-          </div> -->
+          </div>
           <!-- form -->
-          <!-- <div class="form">
+          <div class="form">
             <h2 class="footer__title">Підпишіться на розсилку</h2>
             <form class="subscription-form" name="form">
               <input
@@ -672,10 +680,79 @@
                 </svg>
               </button>
             </form>
-          </div> -->
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+       <svg class="mobile-menu-icon" width="40" height="40">
+         <use href="./images/icons.svg#icon-close"></use>
+       </svg>
+      </button>
+      <ul class="mobile-menu mobile-menu-list list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link active" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts__link--phone link" href="tel:380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__link mobile-contacts__link--mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials__item">
+          <a 
+            class="mobile-socials__link link" 
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a 
+            class="mobile-socials__link link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a 
+            class="mobile-socials__link link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a
+            class="mobile-socials__link link"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

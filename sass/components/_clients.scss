@@ -1,15 +1,28 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    // на таблетці також по 60px
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .clients__list {
-    @include centeredFlex ();
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+    
+
+    @media screen and (min-width: 1200px) {
+        @include centeredFlex ();
+    }
 }
 
 .clients__item {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;

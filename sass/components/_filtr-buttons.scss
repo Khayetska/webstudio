@@ -1,9 +1,16 @@
 .filtr {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   gap: 8px;
   margin-top: 0px;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 326px;
+    justify-content: flex-start;
+  }
+
 }
 
 .filtr__button {
