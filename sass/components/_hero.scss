@@ -5,8 +5,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
 }
 
 .hero__description {
@@ -19,14 +25,18 @@
     color: #ffffff;
     margin-bottom: 30px;
 
-
+    @media screen and (min-width: 768px) {
+        max-width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: calc(60 / 44);
         margin: 0 auto;
         margin-bottom: 30px;
-        width: 696px;
+        max-width: 696px;
     }
 }
 
@@ -40,8 +50,7 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    padding: 10px 26px;
-    // padding: 10px 32px;
+    padding: 10px 24px;
     border: none;
     cursor: pointer;
     font-family: inherit;
@@ -52,5 +61,9 @@
 
     &:hover, &:focus {
         background-color: #188ce8;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
     }
 }

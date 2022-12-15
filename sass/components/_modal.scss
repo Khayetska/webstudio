@@ -6,6 +6,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     z-index: 10;
+    overflow-y: scroll;
     opacity: 1;
     @include animation (opacity);
 
@@ -19,10 +20,11 @@
     position: relative;
     top: 50%;
     left: 50%;
-    width: 450px;
-    // width: 528px;
+    max-width: 450px;
     min-height: 581px;
     padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -32,6 +34,10 @@
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 528px;
     }
 }
 
@@ -170,10 +176,13 @@
 .modal-form__ugryment {
     font-size: 12px;
     line-height: calc(14 / 12);
-    // font-size: 14px;
-    // line-height: calc(24 / 14);
     color: #757575;
     user-select: none;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(24 / 14); 
+    }
 }
 
 .modal-form__link {

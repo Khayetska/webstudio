@@ -13,9 +13,14 @@
 .feature__list {
    margin-top: 0;
    margin-bottom: 0;
+
+   @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+   }
    
     @media screen and (min-width: 1200px) {
-        display: flex;
         justify-content: space-between;
         margin-top: 0;
         margin-bottom: 0;
@@ -23,12 +28,15 @@
 }
 
 .feature__item {
-    &:not(:last-child) {
-        margin-bottom: 30px;
-   }
     
     @media screen and (max-width: 767px) {
-        
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 354px;
     }
    
     @media screen and (min-width: 1200px) {
@@ -46,6 +54,14 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .feature__title {

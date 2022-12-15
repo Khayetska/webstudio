@@ -1,12 +1,21 @@
 .header {
     border-bottom: 1px solid #ececec;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    // padding-top: 24px;
-    // padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
     
     .conteiner {
         @include centeredFlex (space-between)
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
     }
 }
 
@@ -14,19 +23,25 @@
     font-family: "Raleway", sans-serif;
     font-size: 24px;
     line-height: calc(28 / 24);
-    // font-size: 26px;
-    // line-height: calc(31 / 26);
     color: $accent-color;
     display: inline-block;
-    margin-right: 93px;
     
     &__accent {
             color: $title-text-color;
         }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: calc(31 / 26);
+    }
 }
 
 .header__logo {
-    margin-right: 93px;
+    margin-right: 87px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right:93px;
+    }
 }
 
 // site nav
@@ -37,11 +52,14 @@
 }
 
 .nav__list {
-    display: none;
-    // margin-top: 0;
-    // margin-bottom: 0;
-    // display: flex;
-    // gap: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: 50px;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
 
 .nav__link {
@@ -71,18 +89,34 @@
     
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -2px;
         background-color: $accent-color;
         border-radius: 2px;
+
+        @media screen and (min-width: 1200px) {
+            bottom: 0;
+        }
     }
 }
 
 .auth-nav {
-    display: none;
-    // margin-top: 0;
-    // margin-bottom: 0;
-    // display: flex;
-    // gap: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 30px;
+    }
 }
 
 .auth-nav__link {
