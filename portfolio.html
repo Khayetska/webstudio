@@ -66,173 +66,305 @@
     <main>
       <!-- PROJECTS -->
       <section class="projects">
-        <div class="conteiner">
-          <h1 class="title title--visually-hidden">Проєкти</h1>
-          <ul class="filtr list">
-            <li>
-              <button type="button" class="filtr__button current">Усі</button>
-            </li>
-            <li>
-              <button type="button" class="filtr__button">Веб-сайти</button>
-            </li>
-            <li><button type="button" class="filtr__button">Додатки</button></li>
-            <li><button type="button" class="filtr__button">Дизайн</button></li>
-            <li>
-              <button type="button" class="filtr__button">Маркетинг</button>
-            </li>
-          </ul>
-          <ul class="projects__list list">
-            <li class="projects__item">
-              <div class="projects__thumb">
-                <a href="" class="projects__link link">
-                  <img class="projects__img" src="./images/portfolio-1.jpg" alt="Екран ноутбуку з веб-сайтом Технокряк" width="370"
-                    height="294" />
+      <div class="conteiner">
+        <h1 class="title title--visually-hidden">Проєкти</h1>
+        <ul class="filtr list">
+          <li>
+            <button type="button" class="filtr__button current">Усі</button>
+          </li>
+          <li>
+            <button type="button" class="filtr__button">Веб-сайти</button>
+          </li>
+          <li><button type="button" class="filtr__button">Додатки</button></li>
+          <li><button type="button" class="filtr__button">Дизайн</button></li>
+          <li>
+            <button type="button" class="filtr__button">Маркетинг</button>
+          </li>
+        </ul>
+        <ul class="projects__list list">
+          <li class="projects__item">
+            <div class="projects__thumb">
+              <a href="" class="projects__link link">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-1_desk.jpg 1x, images/portfolio/img-1_desk@2x.jpg 2x">
+
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-1_tab.jpg 1x, images/portfolio/img-1_tab@2x.jpg 2x">
+
+                  <!-- phone screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/img-1_mob.jpg 1x, images/portfolio/img-1_mob@2x.jpg 2x">
+                  <img class="projects__img" src="./images/portfolio/img-1_mob.jpg"
+                    alt="Екран ноутбуку з веб-сайтом Технокряк" width="450" height="294" loading="lazy" />
+                </picture>
                 <div class="projects__action">
-                    <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
-              </div>
-                <div class="description">
-                  <h2 class="description__title">Технокряк</h2>
-                  <p class="description__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <div class="projects__thumb">
-                <a href="" class="projects__link link">
-                <img class="projects__img" src="./images/portfolio-2.jpg" alt="Дизайн постера New Orlean vs Golden Star"
-                width="370" />
+            </div>
+            <div class="description">
+              <h2 class="description__title">Технокряк</h2>
+              <p class="description__text">Веб-сайт</p>
+            </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <div class="projects__thumb">
+              <a href="" class="projects__link link">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-2_desk.jpg 1x, images/portfolio/img-2_desk@2x.jpg 2x">
+
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-2_tab.jpg 1x, images/portfolio/img-2_tab@2x.jpg 2x">
+
+                  <!-- phone screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/img-2_mob.jpg 1x, images/portfolio/img-2_mob@2x.jpg 2x">
+                  <img class="projects__img" src="./images/portfolio/img-2_mob.jpg"
+                    alt="Дизайн постера New Orlean vs Golden Star" width="450" height="294" loading="lazy" />
+                </picture>
                 <div class="projects__action">
-                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
-              </div>            
-                <div class="description">
-                  <h2 class="description__title">Постер New Orlean vs Golden Star</h2>
-                  <p class="description__text">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <div class="projects__thumb">
-                <a href="" class="projects__link link">
-                <img class="projects__img" src="./images/portfolio-3.jpg" alt="Лого ресторану Seafood" width="370" />
+            </div>
+            <div class="description">
+              <h2 class="description__title">Постер New Orlean vs Golden Star</h2>
+              <p class="description__text">Дизайн</p>
+            </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <div class="projects__thumb">
+              <a href="" class="projects__link link">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-3_desk.jpg 1x, images/portfolio/img-3_desk@2x.jpg 2x">
+
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-3_tab.jpg 1x, images/portfolio/img-3_tab@2x.jpg 2x">
+
+                  <!-- phone screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/img-3_mob.jpg 1x, images/portfolio/img-3_mob@2x.jpg 2x">
+                  <img class="projects__img" src="./images/portfolio/img-4_mob.jpg" alt="Лого ресторану Seafood"
+                    width="450" height="294" loading="lazy" />
+                </picture>
                 <div class="projects__action">
-                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
-              </div>
-                <div class="description">
-                  <h2 class="description__title">Ресторан Seafood</h2>
-                  <p class="description__text">Додаток</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <div class="projects__thumb">
-                <a href="" class="projects__link link">
-                <img class="projects__img" src="./images/portfolio-4.jpg" alt="Навушники" width="370" />
+            </div>
+            <div class="description">
+              <h2 class="description__title">Ресторан Seafood</h2>
+              <p class="description__text">Додаток</p>
+            </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <div class="projects__thumb">
+              <a href="" class="projects__link link">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-4_desk.jpg 1x, images/portfolio/img-4_desk@2x.jpg 2x">
+
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-4_tab.jpg 1x, images/portfolio/img-4_tab@2x.jpg 2x">
+
+                  <!-- phone screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/img-4_mob.jpg 1x, images/portfolio/img-4_mob@2x.jpg 2x">
+                  <img class="projects__img" src="./images/portfolio/img-4_mob.jpg" alt="Навушники" width="450"
+                    height="294" loading="lazy" />
+                </picture>
                 <div class="projects__action">
-                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
-              </div>
-                <div class="description">
-                  <h2 class="description__title">Проєкт Prime</h2>
-                  <p class="description__text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <div class="projects__thumb">
-                <a href="" class="projects__link link">
-                <img class="projects__img" src="./images/portfolio-5.jpg" alt="Коробки" width="370" />
+            </div>
+            <div class="description">
+              <h2 class="description__title">Проєкт Prime</h2>
+              <p class="description__text">Маркетинг</p>
+            </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <div class="projects__thumb">
+              <a href="" class="projects__link link">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-5_desk.jpg 1x, images/portfolio/img-5_desk@2x.jpg 2x">
+
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-5_tab.jpg 1x, images/portfolio/img-5_tab@2x.jpg 2x">
+
+                  <!-- phone screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/img-5_mob.jpg 1x, images/portfolio/img-5_mob@2x.jpg 2x">
+                  <img class="projects__img" src="./images/portfolio/img-5_mob.jpg" alt="Коробки" width="450"
+                    height="294" loading="lazy" />
+                </picture>
                 <div class="projects__action">
-                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
-              </div>
-                <div class="description">
-                  <h2 class="description__title">Проєкт Boxes</h2>
-                  <p class="description__text">Додаток</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <div class="projects__thumb">
-                <a href="" class="projects__link link">
-                <img class="projects__img" src="./images/portfolio-6.jpg" alt="Екран монітору веб-сайтом Inspiration has no Borders"
-                  width="370" />
+            </div>
+            <div class="description">
+              <h2 class="description__title">Проєкт Boxes</h2>
+              <p class="description__text">Додаток</p>
+            </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <div class="projects__thumb">
+              <a href="" class="projects__link link">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-6_desk.jpg 1x, images/portfolio/img-6_desk@2x.jpg 2x">
+
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-6_tab.jpg 1x, images/portfolio/img-6_tab@2x.jpg 2x">
+
+                  <!-- phone screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/img-6_mob.jpg 1x, images/portfolio/img-6_mob@2x.jpg 2x">
+                  <img class="projects__img" src="./images/portfolio/img-6_mob.jpg"
+                    alt="Екран монітору веб-сайтом Inspiration has no Borders" width="450" height="294"
+                    loading="lazy" />
+                </picture>
                 <div class="projects__action">
-                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
-              </div>
-                <div class="description">
-                  <h2 class="description__title">Inspiration has no Borders</h2>
-                  <p class="description__text">Веб-сайт</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <div class="projects__thumb">
-                <a href="" class="projects__link link">
-                <img class="projects__img" src="./images/portfolio-7.jpg" alt="Дизайн книги Limited Edition" width="370" />
+            </div>
+            <div class="description">
+              <h2 class="description__title">Inspiration has no Borders</h2>
+              <p class="description__text">Веб-сайт</p>
+            </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <div class="projects__thumb">
+              <a href="" class="projects__link link">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-7_desk.jpg 1x, images/portfolio/img-7_desk@2x.jpg 2x">
+
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-7_tab.jpg 1x, images/portfolio/img-7_tab@2x.jpg 2x">
+
+                  <!-- phone screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/img-7_mob.jpg 1x, images/portfolio/img-7_mob@2x.jpg 2x">
+                  <img class="projects__img" src="./images/portfolio/img-7_mob.jpg" alt="Дизайн книги Limited Edition"
+                    width="450" height="294" loading="lazy" />
+                </picture>
                 <div class="projects__action">
-                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
-              </div>
-                <div class="description">
-                  <h2 class="description__title">Видання Limited Edition</h2>
-                  <p class="description__text">Дизайн</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <div class="projects__thumb">
-                <a href="" class="projects__link link">
-                <img class="projects__img" src="./images/portfolio-8.jpg" alt="Бірка LAB" width="370" />
+            </div>
+            <div class="description">
+              <h2 class="description__title">Видання Limited Edition</h2>
+              <p class="description__text">Дизайн</p>
+            </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <div class="projects__thumb">
+              <a href="" class="projects__link link">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-8_desk.jpg 1x, images/portfolio/img-8_desk@2x.jpg 2x">
+
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-8_tab.jpg 1x, images/portfolio/img-8_tab@2x.jpg 2x">
+
+                  <!-- phone screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/img-8_mob.jpg 1x, images/portfolio/img-8_mob@2x.jpg 2x">
+                  <img class="projects__img" src="./images/portfolio/img-8_mob.jpg" alt="Бірка LAB" width="450"
+                    height="294" loading="lazy" />
+                </picture>
                 <div class="projects__action">
-                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
-              </div>
-                <div class="description">
-                  <h2 class="description__title">Проєкт LAB</h2>
-                  <p class="description__text">Маркетинг</p>
-                </div>
-              </a>
-            </li>
-            <li class="projects__item">
-              <div class="projects__thumb">
-                <a href="" class="projects__link link">
-                <img class="projects__img" src="./images/portfolio-9.jpg" alt="Екран ноутбукуз додатком Growing Business"
-                  width="370" />
+            </div>
+            <div class="description">
+              <h2 class="description__title">Проєкт LAB</h2>
+              <p class="description__text">Маркетинг</p>
+            </div>
+            </a>
+          </li>
+          <li class="projects__item">
+            <div class="projects__thumb">
+              <a href="" class="projects__link link">
+                <picture>
+                  <!-- desktop screen -->
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/img-9_desk.jpg 1x, images/portfolio/img-9_desk@2x.jpg 2x">
+
+                  <!-- tablet screen -->
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/img-9_tab.jpg 1x, images/portfolio/img-9_tab@2x.jpg 2x">
+
+                  <!-- phone screen -->
+                  <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/img-9_mob.jpg 1x, images/portfolio/img-9_mob@2x.jpg 2x">
+                  <img class="projects__img" src="./images/portfolio/img-9_mob.jpg"
+                    alt="Екран ноутбукуз додатком Growing Business" width="450" height="294" loading="lazy" />
+                </picture>
                 <div class="projects__action">
-                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
+                  <p class="projects__action-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                    сервісів. Все це
                     дозволить відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
-              </div>
-                <div class="description">
-                  <h2 class="description__title">Growing Business</h2>
-                  <p class="description__text">Додаток</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
+            </div>
+            <div class="description">
+              <h2 class="description__title">Growing Business</h2>
+              <p class="description__text">Додаток</p>
+            </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
     <!-- FOOTER -->
     <footer class="footer">
       <div class="conteiner">
