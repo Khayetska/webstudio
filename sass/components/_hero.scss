@@ -1,12 +1,49 @@
 .hero {
     background-color: #2f303a;
-    background-image: url(../images/overlay.png),
-        url(../images/background-image.jpg);
+    // background-image: url(../images/overlay.png),
+    //     url(../images/background-image.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 118px;
     padding-bottom: 118px;
+
+    // modile screen
+    background-image: url(../images/hero/overlay_mob.png),
+        url(../images/hero/img_mob.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/hero/overlay_mob@2x.png),
+            url(../images/hero/img_mob@2x.jpg);
+    }
+
+    // tablet screen
+    @media screen and (min-width: 481px) {
+        background-image: url(../images/hero/overlay_tab.png),
+            url(../images/hero/img_tab.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/hero/overlay_tab@2x.png),
+                url(../images/hero/img_tab@2x.jpg);
+        }
+    }
+
+    // desktop screen
+    @media screen and (min-width: 769px) {
+        background-image: url(../images/hero/overlay_desk.png),
+            url(../images/hero/img_desk.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/hero/overlay_desk@2x.png),
+                url(../images/hero/img_desk@2x.jpg);
+        }
+    }
 
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
@@ -59,7 +96,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background-color: #188ce8;
     }
 
