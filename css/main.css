@@ -54,6 +54,8 @@ img {
 .list {
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .title {
@@ -1179,6 +1181,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 @media screen and (min-width: 1200px) {
@@ -1281,7 +1286,7 @@ img {
 .footer__logo {
   margin-bottom: 20px;
 }
-@media screen and (max-width: 787px) {
+@media screen and (max-width: 1199px) {
   .footer__logo {
     display: block;
     text-align: center;
