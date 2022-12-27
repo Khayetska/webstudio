@@ -56,7 +56,8 @@
         <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
-          aria-controls="mobile-menu">
+          aria-controls="mobile-menu"
+        >
           <svg class="mobile-menu-icon" width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -65,9 +66,11 @@
     </header>
     <main>
       <!--------HERO--------->
-       <section class="hero">
+      <section class="hero">
         <div class="conteiner">
-          <h1 class="hero__description">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero__description">
+            Ефективні рішення для вашого бізнесу
+          </h1>
           <button type="button" class="hero__button" data-modal-open>
             Замовити послугу
           </button>
@@ -75,17 +78,23 @@
         <!-- modal window -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="close-button  modal__close-button" type="button" data-modal-close>
+            <button
+              class="close-button modal__close-button"
+              type="button"
+              data-modal-close
+            >
               <svg class="close-button__icon" width="11" height="11">
                 <use href="./images/icons.svg#x"></use>
               </svg>
             </button>
-            <p class="modal__description">Залиште свої дані, ми вам передзвонимо</p>
+            <p class="modal__description">
+              Залиште свої дані, ми вам передзвонимо
+            </p>
             <form class="modal-form" name="modal-form">
               <label class="modal-form__label" for="user-name">Ім'я</label>
               <div class="modal-form__input-field">
                 <input
-                  class="modal-form__input"  
+                  class="modal-form__input"
                   type="text"
                   id="user-name"
                   name="user-name"
@@ -121,7 +130,9 @@
                   <use href="./images/icons.svg#email"></use>
                 </svg>
               </div>
-              <label for="user-comment" class="modal-form__label">Коментар</label>
+              <label for="user-comment" class="modal-form__label"
+                >Коментар</label
+              >
               <textarea
                 class="modal-form__textarea"
                 name="comment"
@@ -140,7 +151,9 @@
                   <a class="modal-form__link" href="">Умови договору</a>
                 </label>
               </div>
-              <button class="modal-form__submit" type="submit">Відправити</button>
+              <button class="modal-form__submit" type="submit">
+                Відправити
+              </button>
             </form>
           </div>
         </div>
@@ -199,7 +212,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <!--------WORK---------->
       <section class="work">
         <div class="conteiner">
@@ -817,55 +830,79 @@
     </footer>
 
     <!-- Mobile menu -->
-     <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-       <svg class="mobile-menu-icon" width="40" height="40">
-         <use href="./images/icons.svg#icon-close"></use>
-       </svg>
+        <svg class="mobile-menu-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
       </button>
       <ul class="mobile-menu mobile-menu-list list">
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link mobile-menu__link--first link active" href="./index.html">Студія</a>
+          <a
+            class="mobile-menu__link mobile-menu__link--first link active"
+            href="./index.html"
+            >Студія</a
+          >
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link mobile-menu__link--second link" href="./portfolio.html">Портфоліо</a>
+          <a
+            class="mobile-menu__link mobile-menu__link--second link"
+            href="./portfolio.html"
+            >Портфоліо</a
+          >
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link mobile-menu__link--third link" href="">Контакти</a>
+          <a class="mobile-menu__link mobile-menu__link--third link" href=""
+            >Контакти</a
+          >
         </li>
       </ul>
       <ul class="mobile-contacts list">
         <li class="mobile-contacts__item">
-          <a class="mobile-contacts__link mobile-contacts__link--phone link" href="tel:380961111111">+38 096 111 11 11</a>
+          <a
+            class="mobile-contacts__link mobile-contacts__link--phone link"
+            href="tel:380961111111"
+            >+38 096 111 11 11</a
+          >
         </li>
         <li class="mobile-contacts__item">
-          <a class="mobile-contacts__link mobile-contacts__link--mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a
+            class="mobile-contacts__link mobile-contacts__link--mail link"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
       </ul>
       <ul class="mobile-socials list">
         <li class="mobile-socials__item">
-          <a 
-            class="mobile-socials__link link" 
+          <a
+            class="mobile-socials__link link"
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Instagram">Instagram</a>
+            aria-label="Instagram"
+            >Instagram</a
+          >
         </li>
         <li class="mobile-socials__item">
-          <a 
+          <a
             class="mobile-socials__link link"
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Twitter">Twitter</a>
+            aria-label="Twitter"
+            >Twitter</a
+          >
         </li>
         <li class="mobile-socials__item">
-          <a 
+          <a
             class="mobile-socials__link link"
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Facebook">Facebook</a>
+            aria-label="Facebook"
+            >Facebook</a
+          >
         </li>
         <li class="mobile-socials__item">
           <a
@@ -873,7 +910,9 @@
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn">LinkedIn</a>
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
         </li>
       </ul>
     </div>
